@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .project, .services, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project div, .services div, .testimonials div {
+            flex: 1 1 30%; /* responsive columns */
+            margin: 10px;
+            background: #e2e2e2;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .project img, .services img, .testimonials img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        @media (max-width: 600px) {
+            .project div, .services div, .testimonials div {
+                flex: 1 1 100%; /* stack on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a web developer with a passion for creating beautiful and functional websites. I enjoy working with modern web technologies and continuously strive to improve my skills. My goal is to deliver user-friendly and aesthetically pleasing web applications.</p>
+        <p>In my free time, I love exploring new technologies, participating in hackathons, and contributing to open-source projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <div>
+                <img src=https://lh7-us.googleusercontent.com/docsz/AD_4nXenkLawg51EAraGhsWk1QzAylB25DPA-PO-tvUQjfQ9ynielLFOS67r0BayRwzCbXzsp4TBzKsInf7NTXRaDP0-obyg7k4-aok3NXMCelpM_JCAwAxl6ZYb9LHeYhMHM5EXl5hE5OhnQcox82dl34yrr5w?key=1lnbn8-Az2qyojsnZFp1DQ" alt="Project 1">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+                <p><a href="https://example.com/project1" target="_blank">View Project</a></p>
+            </div>
+            <div>
+                <img src="https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWNvbW1lcmNlfGVufDB8fDB8fHww" alt="Project 2">
+                <h3>Project 2: E-commerce Store</h3>
+                <p>An e-commerce web application where users can browse and purchase products. Built with React and Node.js.</p>
+                <p><a href="https://example.com/project2" target="_blank">View Project</a></p>
+            </div>
+            <div>
+                <img src="https://www.shoutmeloud.com/wp-content/uploads/2020/08/What-is-blogging.jpg" width=450 alt="Project 3">
+                <h3>Project 3: Blogging Platform</h3>
+                <p>A blogging platform allowing users to create, edit, and share posts. Built with Django and PostgreSQL.</p>
+                <p><a href="https://example.com/project3" target="_blank">View Project</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services">
+            <div>
+                <h3>Web Development</h3>
+                <p>Creating responsive and visually appealing websites using modern technologies.</p>
+            </div>
+            <div>
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly interfaces and enhancing user experiences.</p>
+            </div>
+            <div>
+                <h3>SEO Optimization</h3>
+                <p>Improving website visibility on search engines through effective SEO strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <div>
+                <p>"Great experience! The website is exactly what we needed!"</p>
+                <p><strong>- Client A</strong></p>
+            </div>
+            <div>
+                <p>"Professional and timely service. Highly recommended!"</p>
+                <p><strong>- Client B</strong></p>
+            </div>
+            <div>
+                <p>"Fantastic work! Will definitely work with them again."</p>
+                <p><strong>- Client C</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formResponse"></div>
+    </section>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Here you could add code to send the form data to a server
+
+        // Displaying a simple response
+        document.getElementById('formResponse').innerHTML = `
+            <p>Thank you, ${name}. Your message has been sent!</p>
+        `;
+
+        // Resetting the form
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
